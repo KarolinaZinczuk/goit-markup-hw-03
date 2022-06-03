@@ -1,13 +1,26 @@
-body {
-  font-family: "Roboto", "Raleway", sans-serif;
-}
 :root {
   --brand-color: #212121;
 }
 
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+}
+
+
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
+}
+
+ul, figure {
+  margin: 0;
+  padding: 0;
+  }
+  
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* head */
@@ -17,6 +30,9 @@ body {
 .header {
   background-color: #fff;
   color: var(--brand-color);
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header .container {
@@ -50,6 +66,7 @@ body {
   display: flex;
   list-style: none;
   justify-content: flex-end;
+  margin-left: 298px;
 }
 
 .header-link {
@@ -60,8 +77,8 @@ body {
   font-size: 14px;
   line-height: 1, 14;
   color: var(--brand-color);
-  margin-right: 23px;
-  margin-left: 23px;
+  padding-right: 23px;
+  padding-left: 23px;
 }
 
 .header-link:focus,
@@ -71,6 +88,10 @@ body {
 
 .gray-link {
   color: #757575;
+}
+address .header-link{
+  padding-right: 0px;
+  padding-left: 50px;
 }
 
 /* main */
@@ -82,13 +103,10 @@ body {
   display: flex;
   padding-bottom: 200px;
   padding-top: 200px;
-}
-
-main .heading {
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
+
+
 .heading-title {
   color: #fff;
   font-weight: 900;
@@ -97,18 +115,20 @@ main .heading {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
-  margin-bottom: 30px;
+  
+  
+  padding-bottom: 30px;
+  margin-bottom: 0px;
   margin-top: 0px;
+  justify-content: center;
 }
 
 /* description */
 
 .description {
   background-color: #fff;
-  padding-top: 94px;
-  padding-bottom: 94px;
   display: flex;
+  padding-bottom: 0px;
 }
 main .description {
   align-content: center;
@@ -117,7 +137,6 @@ main .description {
 .description-list {
   list-style-type: none;
   display: flex;
-  margin-left: -40px;
 }
 .description-title {
   font-weight: 700;
@@ -141,10 +160,7 @@ main .description {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 94px;
-  margin: 0px;
-  margin-left: -40px;
-}
+  }
 
 .duties-title {
   font-weight: 700;
@@ -152,24 +168,21 @@ main .description {
   line-height: 1, 17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  margin-top: 0px;
+  margin: 0px;
+  padding-bottom: 50px ;
+  
 }
 
 /* team */
 
 .team {
   background-color: #f5f4fa;
-  height: 460px;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .team-list {
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -40px;
 }
 .team-title {
   font-weight: 700;
@@ -177,7 +190,8 @@ main .description {
   line-height: 1, 17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 .team-title-item {
   font-weight: 500;
@@ -185,8 +199,6 @@ main .description {
   line-height: 1, 19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 30px;
-  margin-bottom: 0px;
 }
 .team-text {
   font-weight: 400;
@@ -204,8 +216,6 @@ main .description {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding: 0px;
-  border: 0px;
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -241,29 +251,26 @@ main .description {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 41px 10px 42px;
-  text-align: center;
+  justify-content: center;
+  
 }
 
 .button-item-list {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  margin-left: -40px;
-  border-top: 1px solid #ececec;
-  padding-top: 94px;
-  padding-bottom: 50px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
+  margin-top: 94px;
+  margin-bottom: 50px;
+  }
 
 /* solutions */
 
 .solutions {
   background-color: #fff;
+  margin-bottom: 94px;
 }
 .solutions-list {
   list-style-type: none;
-
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -286,13 +293,12 @@ main .description {
 .solutions-figure {
   background-color: #fff;
   display: inline-block;
-  border: 1px solid #eeeeee;
-  margin-left: -40px;
+  
+  margin-bottom: 30px;
+  border: 1px solid #EEEEEE
+
 }
 
-.solutions-figure:nth-child(n + 7) {
-  margin-bottom: 94px;
-}
 
 .solutions-figcaption {
   margin-left: 24px;
@@ -304,8 +310,8 @@ main .description {
 .footer {
   background-color: #2f303a;
   color: #fff;
-  height: 192px;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -327,7 +333,6 @@ main .description {
   text-decoration: none;
   list-style-type: none;
   color: #fff;
-  margin-left: -20px;
 }
 .footer-text {
   font-style: normal;
@@ -341,6 +346,10 @@ main .description {
 .footer-link:hover {
   color: #2196f3;
 }
+.footer-tel{
+  margin-top: 9px;
+}
+
 .white60 {
   color: rgba(255, 255, 255, 0.6);
 }
