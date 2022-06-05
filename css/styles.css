@@ -285,30 +285,33 @@ main .description {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  margin-bottom: 0px;
-
-  margin: 0px;
+   margin: 0px;
 }
 .solutions-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1, 86;
   color: #757575;
-
+  margin-top: 4px;
   margin-bottom: 0px;
 }
 .solutions-figure {
   background-color: #fff;
   display: inline-block;
   margin-bottom: 30px;
+   
 }
 
 .solutions-figcaption {
   flex-wrap: wrap;
-  border: 1px solid kolor_bordera;
-  border-top: #eeeeee;
+ border: 1px solid #EEEEEE;
+  border-top: none;
   padding: 20px 24px;
-}
+  }
+
+  .solutions-figure img{
+    display: block;
+  }
 
 /* footer */
 
